@@ -2,7 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-DEFAULT_TIMEOUT = 30  # Ajax考慮で少し長め
+DEFAULT_TIMEOUT = 10  # Ajax考慮で少し長め
 
 class BasePage:
     def __init__(self, driver, timeout: int = DEFAULT_TIMEOUT):
